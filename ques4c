@@ -1,0 +1,17 @@
+%%writefile practice4c.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "The following items were top sellers\n";
+  cout << "during the month of June:";
+  cout << "Computer games\nCoffee";
+  cout << "\nAspirin\n";
+  return 0;
+}
+
+%%shell
+
+g++ practice4c.cpp -o practice4c.elf
+./practice4c.elf
