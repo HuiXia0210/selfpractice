@@ -1,0 +1,18 @@
+%%writefile practice4bremove.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "The following items were top sellers";
+  cout << "during the month of June:";
+  cout << "Computer games";
+  cout << "Coffee";
+  cout << "Aspirin" ;
+  return 0;
+}
+
+%%shell
+
+g++ practice4bremove.cpp -o practice4bremove.elf
+./practice4bremove.elf
