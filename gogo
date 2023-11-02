@@ -1,0 +1,202 @@
+%%writefile practice1.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "Hello World! Awesome, this is my firsy C++ program!\n";
+  getchar();
+  return 0;
+}
+
+%%shell
+
+g++ practice1.cpp -o practice1.elf
+./practice1.elf
+
+--------------------------------------
+
+%%writefile practice2.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  string name;
+  string city;
+
+  cout << "Please enter your full name: ";
+  getline(cin, name);
+  cout << "Enter the city you live: ";
+  getline(cin,city);
+
+  cout << "Hello, " << name << endl;
+  cout << "You live in " << city << endl;
+  return 0;
+}
+
+%%shell
+
+g++ practice2.cpp -o practice2.elf
+./practice2.elf
+--------------------------------------
+%%writefile practice3.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x = 25;
+  int * ptr = nullptr;
+
+  ptr = &x;
+  cout << "The value in x is " << x << endl;
+  cout << "The value pointed by ptr is " << *ptr << endl;
+  return 0;
+}
+
+%%shell
+g++ practice3.cpp -o practice3.elf
+./practice3.elf
+
+-------------------------------------
+
+%%writefile practice4a.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "Programming is ";
+  cout << "great fun!";
+  return 0;
+}
+
+
+%%shell
+
+g++ practice4a.cpp -o practice4a.elf
+./practice4a.elf
+------------------------------------
+%%writefile practice4b.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "The following items were top sellers" << endl;
+  cout << "during the month of June:" << endl;
+  cout << "Computer games" << endl;
+  cout << "Coffee" << endl;
+  cout << "Aspirin" << endl;
+  return 0;
+}
+
+%%shell
+
+g++ practice4b.cpp -o practice4b.elf
+./practice4b.elf
+-------------------------------------
+%%writefile practice4bremove.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "The following items were top sellers";
+  cout << "during the month of June:";
+  cout << "Computer games";
+  cout << "Coffee";
+  cout << "Aspirin" ;
+  return 0;
+}
+
+%%shell
+
+g++ practice4bremove.cpp -o practice4bremove.elf
+./practice4bremove.elf
+
+------------------------------------------
+%%writefile practice4c.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "The following items were top sellers\n";
+  cout << "during the month of June:";
+  cout << "Computer games\nCoffee";
+  cout << "\nAspirin\n";
+  return 0;
+}
+
+%%shell
+
+g++ practice4c.cpp -o practice4c.elf
+./practice4c.elf
+-------------------------------------------
+%%writefile practice4d.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int number;
+
+  number = 5;
+  cout << "The value in number is " << number << endl;
+  return 0;
+}
+
+%%shell
+g++ practice4d.cpp -o practice4d.elf
+./practice4d.elf
+-------------------------------------------
+%%writefile practice4e.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int apples;
+
+  apples = 20;
+  cout << "Today we sold " << apples << " bushels of apples.\n";
+  return 0;
+}
+
+%%shell
+g++ practice4e.cpp -o practice4e.elf
+./practice4e.elf
+------------------------------------------
+%%writefile practice4f.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int checking;
+  unsigned int miles;
+  long diameter;
+
+  checking = -20;
+  miles = 4276;
+  diameter = 100000;
+  cout << "We have made a long journey of " << miles;
+  cout << " miles.\n";
+  cout << "Our checking account balance is " << checking;
+  cout << "\nThe galaxy is about " << diameter;
+  cout << " light years in diameter.\n";
+  return 0;
+}
+
+%%shell
+g++ practice4f.cpp -o practice4f.elf
+./practice4f.elf
+-------------------------------------------
+
+
+
+
+
+
