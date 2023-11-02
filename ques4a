@@ -1,0 +1,16 @@
+%%writefile practice4a.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "Programming is ";
+  cout << "great fun!";
+  return 0;
+}
+
+
+%%shell
+
+g++ practice4a.cpp -o practice4a.elf
+./practice4a.elf
