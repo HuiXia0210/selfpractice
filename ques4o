@@ -1,0 +1,23 @@
+%%writefile question4o.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  double regularWages;
+  double basePayRate = 18.25;
+  double regularHours = 40.0;
+  double overtimeWages;
+  double overtimePayRate = 27.78;
+  double overtimeHours = 10;
+  double totalWages;
+
+  regularWages = basePayRate * regularHours;
+
+  overtimeWages = overtimePayRate*overtimeHours;
+
+  totalWages = regularWages+overtimeWages;
+
+  cout << "Wages for this week are $" << totalWages << endl;
+  return 0;
+}
